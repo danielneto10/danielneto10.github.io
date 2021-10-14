@@ -9,40 +9,68 @@ html {
 }
 
 body {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
   width: 100%;
   height: 100vh;
   font-family: "Open Sans", sans-serif;
 }
 
+main {
+  background: #f8f8f8;
+}
+
 .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
   margin: 0 auto;
+  padding-top: 50px;
   width: 90%;
   line-height: 1.5;
 }
 
-/* 1ª Parte (Nome) */
+.titulo {
+  border-bottom: 2px solid #585858;
+  margin-bottom: 10px;
+}
+
+/* Introducao */
 
 .introducao {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to right, #2b32b2, #1488cc);
+  background: linear-gradient(#202020, #585858);
 }
 
 .introducao-conteudo {
   width: 80%;
   text-align: center;
-  justify-content: center;
-
   color: #fff;
-  position: absolute;
+  margin-top: auto;
+}
+
+.introducao-botao {
+  font-weight: bold;
+  font-size: 15px;
+  color: #585858;
+  background: #fff;
+  text-decoration: none;
+
+  border: 1px solid #fff;
+  border-radius: 10px;
+
+  margin-top: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.introducao-conteudo h1 {
+  margin-bottom: 10px;
 }
 
 .introducao-titulo {
@@ -57,42 +85,154 @@ body {
 }
 
 .introducao-lista {
-  padding: 1.25em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.introducao-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  margin: 10px;
+
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+  transition: 0.5s background;
+}
+
+.introducao-item i {
+  padding: 10px;
+}
+
+.introducao-item:hover {
+  background: #fff;
+  color: #585858;
+}
+
+.introducao-links {
   display: flex;
   justify-content: center;
 }
 
-.introcao-item {
-  border: 2px solid #ffffff;
-  border-radius: 20%;
-  padding: 10px;
-  margin: 0 10px;
-  transition: .7s background;
-
-  text-decoration: none;
-  color: #fff;
-}
-
-.introcao-item:hover {
-  color: #1488cc;
-  background: #fff;
-}
-
 .introducao-link {
   font-size: 15px;
-  padding: 0px 10px;
+  margin: 12px;
 
   text-decoration: none;
   color: #fff;
 }
 
-/* 2ª Parte (Sobre) */
+/* Sobre */
 
-#sobre {
-  padding: 60px 0;
+.sobre-conteudo {
+  text-align: center;
 }
 
-#sobre p {
-  padding: 10px 0;
+.sobre-conteudo p {
   line-height: 1.5;
+}
+
+.sobre-foto {
+  border-radius: 50%;
+  width: 200px;
+  max-width: 100%;
+  padding: 15px 0;
+}
+
+/* Tecnologias */
+
+#tecnologias {
+  flex-direction: column;
+}
+
+.tecnologia-conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+.tecnologia-item {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.tecnologia-item h3 {
+  margin-bottom: 10px;
+}
+
+.tecnologia-item i {
+  font-size: 80px;
+  margin: 0 10px;
+}
+
+/* Footer */
+
+#footer {
+  background: linear-gradient(#585858, #202020);
+}
+
+.footer-conteudo {
+  color: #fff;
+  font-size: 12px;
+  padding: 15px;
+
+  text-align: center;
+}
+
+/* Responsividade Ipad */
+
+@media screen and (min-width: 768px) {
+  /* Introducao */
+  .introducao-titulo {
+    font-size: 60px;
+  }
+
+  .introducao-sub-titulo {
+    font-size: 40px;
+  }
+
+  .introducao-item {
+    font-size: 50px;
+  }
+
+  .introducao-item i {
+    padding: 15px;
+  }
+
+  .introducao-link {
+    font-size: 20px;
+  }
+
+  .titulo {
+    font-size: 25px;
+  }
+
+  .tecnologia-item i {
+    font-size: 90px;
+  }
+
+  .tecnologia-conteudo {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .tecnologia-item {
+    width: 50%;
+  }
+
+  .tecnologia-item i {
+    padding-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    #sobre p {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+  }
 }

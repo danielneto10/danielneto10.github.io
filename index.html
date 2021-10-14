@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -15,32 +17,56 @@
                 <span class="introducao-titulo">Daniel Fragoso</span>
                 <span class="introducao-sub-titulo">Programador</span>
             </h1>
-            <ul class="introducao-lista">
-                <a href="#" class="introcao-item">Github</a>
-                <a href="#" class="introcao-item">Linkedin</a>
-            </ul>
-            <a href="#sobre" class="introducao-link">Sobre</a>
-            <a href="" class="introducao-link">Tecnologias</a>
+            <div class="introducao-lista">
+                <a href="https://github.com/danielneto10" target="_blank" class="introducao-item"><i
+                        class="devicon-github-original"></i></a>
+                <a href="https://www.linkedin.com/in/daniel-fragoso-350141183/" target="_blank"
+                    class="introducao-item"><i class="devicon-linkedin-plain"></i></a>
+                <a href="mailto:daniel.fluz@hotmail.com" class="introducao-item"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="introducao-links">
+                <a href="#sobre" class="introducao-link">Sobre Mim</a>
+                <a href="#tecnologias" class="introducao-link">Tecnologias</a>
+            </div>
         </div>
+        <a href="#sobre" class="introducao-botao">Deslize para saber mais</a>
     </div>
     <main>
         <section id="sobre" class="container">
             <div class="sobre-conteudo">
-                <h2>SOBRE MIM</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                <h2 class="titulo">SOBRE MIM</h2>
+                <img class="sobre-foto" src="Images/fotoeu.jpg" alt="">
+                <p>Olá, me chamo Daniel Fragoso da Luz Neto, tenho 22 anos e estou atualmente cursando sistemas de
+                    informação. Desde sempre tive interesse na área de tecnologia e busco constantemente evoluir e
+                    aprender coisas novas.</p>
             </div>
         </section>
         <section id="tecnologias" class="container">
-            <div class="habilidades-conteudo">
-
+            <h2 class="titulo">Tecnologias</h2>
+            <div class="tecnologia-conteudo">
+                <div class="tecnologia-item">
+                    <h3>Front-End</h3>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-angularjs-plain colored"></i>
+                </div>
+                <div class="tecnologia-item">
+                    <h3>Back-End</h3>
+                    <i class="devicon-csharp-plain colored"></i>
+                </div>
+                <div class="tecnologia-item">
+                    <h3>Database</h3>
+                    <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
+                </div>
             </div>
         </section>
     </main>
+    <footer id="footer">
+        <div class="footer-conteudo">
+            Copyright ® Daniel Fragoso da Luz Neto
+        </div>
+    </footer>
 </body>
 
 </html>
